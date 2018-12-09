@@ -1,0 +1,47 @@
+{
+  "name": "c4run-18win",
+  "version": "1.0.0",
+  "description": "The layout for C4RUN RTA Relay, it's placed 2018 winter",
+  "homepage": "",
+  "author": {
+    "name": "cma",
+    "email": "yamanaka-team@hotmail.co.jp",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "C4RUN",
+    "relay",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "C4LAN RTAリレー",
+        "title": "C4RUN RTA Relay 2018 Winter",
+        "width": 3,
+        "file": "c4run.html",
+        "headerColor": "#ffcc00"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "c4run.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "c4run-setup.html",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  "license": "GPL-3.0"
+}

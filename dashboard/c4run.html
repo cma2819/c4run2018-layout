@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		h3 {
+			border-bottom: solid 2px #ffdd00;
+		}
+
+		select {
+			width: 100%;
+		}
+		div#button {
+			text-align: right;
+		}
+	</style>
+	<script src="c4run.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<h3>ゲーム画面</h3>
+	<div id="input-game">
+		<select name="play-view" onchange="changeValueOnPlayView(this.value)">
+			<option value="-1"></option>
+		</select>
+	</div>
+	<h3>準備中画面</h3>
+	<div id="input-setup">
+		<select name="setup-view" onchange="changeValueOnSetupView(this.value)">
+			<option value="-1"></option>
+		</select>
+	</div>
+</body>
+
+</html>
