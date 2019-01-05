@@ -17,7 +17,15 @@ const observer = riot.observable(); // This is given when riot.mount on html
 
 /* Update Information on Play View */
 /* プレイ中表示の情報を更新 */
-playRun.on('change', (runIdx) => {
+/* Define Event Listener | イベントリスナの定義 */
+playRun.on('change', (newVal) => {
+    if (newVal) {
+        _update(newVal);
+    }
+});
+
+function _update(runIdx) {
+    console.log(runIdx);
     /* Get Information from Run Index | 表示情報をインデックスから取得 */
     const runInfo = runList[runIdx];
     /* Get Index of Player List | プレイヤーリストのインデックス取得 */
@@ -49,4 +57,10 @@ playRun.on('change', (runIdx) => {
     // Trigger the event update:player-info
     // update:player-infoイベントを発火
     observer.trigger('update:player-info', playerdata)
-});
+}
+
+function updateDefault() {
+    if (playRun.value) {
+        _update(playRun.value);
+    }
+}

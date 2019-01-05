@@ -2,11 +2,9 @@
   "name": "c4run-18win",
   "version": "1.0.0",
   "description": "The layout for C4RUN RTA Relay, it's placed 2018 winter",
-  "homepage": "",
   "author": {
     "name": "cma",
-    "email": "yamanaka-team@hotmail.co.jp",
-    "url": ""
+    "email": "yamanaka-team@hotmail.co.jp"
   },
   "files": [
     "dashboard",

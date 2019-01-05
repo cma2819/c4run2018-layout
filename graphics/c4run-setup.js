@@ -15,7 +15,11 @@ const observer = riot.observable(); // This is given when riot.mount on html
 
 /* Update Information on Setup View */
 /* セットアップ表示の情報を更新 */
-setupRun.on('change', (runIdx) => {
+setupRun.on('change', (newVal) => {
+    _update(newVal);
+});
+
+function _update(runIdx) {
     /* Get Information from Run Index | 表示情報をインデックスから取得 */
     const runInfo = runList[runIdx];
 
@@ -29,7 +33,13 @@ setupRun.on('change', (runIdx) => {
     // Trigger the event update:setup-info
     // update:setup-infoイベントを発火
     observer.trigger('update:setup-info', rundata)
-});
+}
+
+function updateDefault() {
+    if (setupRun.value) {
+        _update(setupRun.value);
+    }
+}
 
 /* Animation(?) for text "準備中" */
 /* 準備中テキストのアニメーションもどき */

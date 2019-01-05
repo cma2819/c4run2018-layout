@@ -6,9 +6,9 @@ const runList = nodecg.bundleConfig.runList;
 
 /* Set Replicant | Replicantを設定 */
 // Index of playing run in RunList | プレイ中のRTAのRTAリスト内インデックス
-const playRun = nodecg.Replicant('playRun', {defaultValue: 0, persistent: false});
+const playRun = nodecg.Replicant('playRun', {defaultValue: 0, persistent: true});
 // Index of setup run in RunList | セットアップ中のRTAのRTAリスト内インデックス
-const setupRun = nodecg.Replicant('setupRun', {defaultValue: 0, persistent: false});
+const setupRun = nodecg.Replicant('setupRun', {defaultValue: 0, persistent: true});
 
 /* DOM in dashboard | ダッシュボード内DOM */
 const playViewEle = $('select[name="play-view"');

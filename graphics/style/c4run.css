@@ -14,7 +14,7 @@ body {
 #info{
     font-weight:bold;
     font-size:22px;
-    font-family: 'keifont' 'Kosugi Maru';
+    font-family: 'keifont','Kosugi Maru';
     color: #222222;
     width: 200px;
     height: 400px;
@@ -23,6 +23,6 @@ body {
 
 #games {
     font-weight:bold;
-    font-family: 'keifont' 'Kosugi Maru';
+    font-family: 'keifont','Kosugi Maru';
     color: #222222;
 }

@@ -8,8 +8,8 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/riot@3.13/riot+compiler.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/riot-route@3.1.2/dist/route.min.js"></script>
-    <script src="c4run.js"></script>
     <script src="./tag/c4run.tag" type="riot/tag"></script>
+    <script src="c4run.js"></script>
     <link href="./style/animate.css" rel="stylesheet">
     <link href="./style/c4run.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
@@ -29,6 +29,7 @@
 </body>
 <script>
     riot.mount('*', {observer: observer})
+    setTimeout(updateDefault, 500);
 </script>
 
 </html>

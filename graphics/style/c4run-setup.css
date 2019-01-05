@@ -4,7 +4,7 @@
 body {
     background-image: url(../img/back_c4lan.png);
     margin:0px;
-    font-family: 'keifont' 'Kosugi Maru';
+    font-family: 'keifont','Kosugi Maru';
     color: #222222;
 }
 #wrapper {
@@ -28,7 +28,7 @@ body {
 #info{
     font-weight:bold;
     font-size:22px;
-    font-family: 'keifont' 'Kosugi Maru';
+    font-family: 'keifont','Kosugi Maru';
     color: #222222;
     width: 200px;
     height: 400px;
@@ -36,6 +36,6 @@ body {
 }
 
 #games {
-    font-family: 'keifont' 'Kosugi Maru';
+    font-family: 'keifont','Kosugi Maru';
     color: #222222;
 }
